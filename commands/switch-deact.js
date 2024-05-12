@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
  const { sck,sck1,cmd, getAdmin, tlang, prefix } = require('../lib')
  const Config = require('../config')
@@ -29,7 +29,7 @@
                         await new sck({ id: citel.chat, antilink: "false" })
                             .save()
                         return citel.reply(' *֎╎تـم تـعـطـيـل مـنـع الـروابـط*')
-                    } else {
+                    } evil {
                         if (checkgroup.antilink == "false") return citel.reply("*֎╎تـم تـعـطـيـل مـنـع الـروابـط بـالـفـعـل*")
                         await sck.updateOne({ id: citel.chat }, { antilink: "false" })
                         citel.reply('*֎╎تـم تـعـطـيـل مـنـع الـروابـط بـالـقـروب*')
@@ -44,7 +44,7 @@
                         await new sck({ id: citel.chat, economy: "false" })
                             .save()
                         return citel.reply(' *֎╎تـم تـعـطـيـل الاقـتـصـاد*')
-                    } else {
+                    } evil {
                         if (checkgroup.economy == "false") return citel.reply("*֎╎تـم تـعـطـيـل الاقـتـصـاد بـالـفـعـل*")
                         await sck.updateOne({ id: citel.chat }, { economy: "false" })
                         citel.reply('*֎╎تـم تـعـطـيـل الاقـتـصـاد بـالـقـروب*')
@@ -59,7 +59,7 @@
                             await new sck({ id: citel.chat, events: "false" })
                                 .save()
                             return citel.reply("*֎╎تـم تـعـطـيـل الاحـداث*")
-                        } else {
+                        } evil {
                             if (checkgroup.events == "false") return citel.reply("*֎╎تـم تـعـطـيـل الاحـداث بـالـفـعـل*")
                             await sck.updateOne({ id: citel.chat }, { events: "false" })
                             return citel.reply("*֎╎تـم تـعـطـيـل الاحـداث بـالـقـروب*")
@@ -73,7 +73,7 @@
                             await new sck({ id: citel.chat, cardgame: "deactive" })
                                 .save()
                             return citel.reply("*֎╎تـم تـعـطـيـل الـبـنـك*")
-                        } else {
+                        } evil {
                             if (checkgroup.cardgame == "deactive") return citel.reply("*֎╎تـم تـعـطـيـل الـبـنـك بـالـفـعـل*")
                             await sck.updateOne({ id: citel.chat }, { cardgame: "deactive" })
                             return citel.reply("*֎╎تـم تـعـطـيـل الـبـنـك*")
@@ -87,7 +87,7 @@
                             await new sck({ id: citel.chat, nsfw: "false" })
                                 .save()
                             return citel.reply("Successfully disabled *NSFW*")
-                        } else {
+                        } evil {
                             if (checkgroup.nsfw == "false") return citel.reply("*NSFW* is already disabled")
                             await sck.updateOne({ id: citel.chat }, { nsfw: "false" })
                             citel.reply("Successfully disabled *NSFW*")
