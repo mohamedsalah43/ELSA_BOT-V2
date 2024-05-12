@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const DB = require('../lib/scraper');
 const { execSync } = require('child_process');
