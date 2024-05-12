@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config ,sleep} = require('../lib')
 const { TelegraPh } = require('../lib/scraper')   
@@ -123,7 +123,7 @@ cmd({
                     if (!usr) {
                         await new sck1({ id: users, ban: "true" }).save()
                         return citel.reply(`*تـم حـظـر ${usr.name} مـن اسـتـخـدام الـبـوت*`)
-                    } else {
+                    } evil {
                         if (usr.ban == "true") return citel.reply(`*${pushnamer} تـم حـظـره مـن اسـتـخـدام الـبـوت بـالـفـعـل*`)
                         await sck1.updateOne({ id: users }, { ban: "true" })
                         return citel.reply(`*${usr.name} تـم حـظـره مـن اسـتـخـدام الـبـوت*`)
@@ -140,26 +140,26 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
-            alias :['بوت','السا'],
+            alias :['بوت','ايفيل'],
             category: "general",
             filename: __filename,
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            let alivemessage = Config.ALIVE_MESSAGE || `بـوتـه الـسـا بـالـخـدمـه`
+            let alivemessage = Config.ALIVE_MESSAGE || `بـوتـه ايفيــل بـالـخـدمـه`
             const alivtxt = `
-*❄️⃝🧚‍♀️مـرحـبـا┇ ${citel.pushName}*
-*❄️⃝🧚‍♀️انــا┇ ${tlang().title}*
+*مـرحـبـا┇ ${citel.pushName}*
+*انــا┇ ${tlang().title}*
 ${alivemessage}
-*❋─═━•┇❄️┇•━═─❋*
-*❄️⃝🧚‍♀️الاصـدار┇ v1*
-*❄️⃝🧚‍♀️مـده الـتـشـغـيـل┇ ${runtime(process.uptime())}*
-*❄️⃝🧚‍♀️الـمـطـور┇ ${Config.ownername}_
-*❄️⃝🧚‍♀️الـفـرع┇ ${Config.BRANCH}*
-*❋─═━•┇❄️┇•━═─❋*
-*❄️⃝🧚‍♀️اكـتـب .الاوامر لـظـهـور اوامـر الـبـوت*
+*❋─═━•┇✨┇•━═─❋*
+*الاصـدار┇ v1*
+*مـده الـتـشـغـيـل┇ ${runtime(process.uptime())}*
+*الـمـطـور┇ ${Config.ownername}_
+*الـفـرع┇ ${Config.BRANCH}*
+*❋─═━•┇✨┇•━═─❋*
+*اكـتـب .الاوامر لـظـهـور اوامـر الـبـوت*
 
-*❄️⃝🧚‍♀️صـنـع بـواسـطـه┇ ${Config.ownername}*
+*صـنـع بـواسـطـه┇ ${Config.ownername}*
 `;
             let aliveMessage = {
                 image: {
@@ -186,7 +186,7 @@ cmd({
         const { tlang } = require('../lib')
         if (!isCreator) return citel.reply(tlang().owner)
         const note_store = new Array()
-        let leadtext = `*❄️⃝🧚‍♀️كـل مـلاحـظـاتـك هـنـا📝┇*\n\n`
+        let leadtext = `*كـل مـلاحـظـاتـك هـنـا📝┇*\n\n`
         leadtext += await allnotes()
         return citel.reply(leadtext)
 
