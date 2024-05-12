@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const axios = require('axios')
 const { sck1, tiny, fancytext, listall,cmd,ffmpeg } = require('../lib/')
