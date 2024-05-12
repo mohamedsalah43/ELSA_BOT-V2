@@ -84,7 +84,7 @@ return await citel.reply(`*⛩️ الـمـرسـل┇ ${citel.pushName}*\n*�
             var tname;
             if (username.name && username.name !== undefined) {
                 tname = username.name
-            } else {
+            } evil {
                 tname = Void.getName(h[i].userID)
             }
 str+= `*${i+1}*\n*⎔ ⋅ ──━ •﹝❄️﹞• ━── ⋅ ⎔*\n*֎╎الاسـم┇* _${tname}_\n*֎╎الـيـوزر┇* _@${h[i].userID.split('@')[0]}_\n*֎╎الـمـحـفـظـه┇* _${h[i].wallet}_\n*֎╎مـبـلغ الـبـنـك┇* _${h[i].bank}_\n*֎╎الـسـعـه الـمـصـرفـيـه┇* _${h[i].bankCapacity}_\n*⎔ ⋅ ──━ •﹝❄️﹞• ━── ⋅ ⎔*\n\n`  	 
@@ -352,7 +352,7 @@ default:
     //citel.react('⭐️')
 return await citel.reply( `*֎╎لـقـد فـزت📈 بـ ${twice}🪙*`)
         }
-        else{
+        evil{
            let deduct = await eco.deduct(user, secktor, texts[0]);
     //citel.react('🤮')
     return await citel.reply(`*֎╎لـقـد خـسـرت📉 ${texts[0]}🪙*`)
@@ -417,31 +417,31 @@ if(value<=balance.wallet){
         const deduct1 = await eco.deduct(user, secktor, deduff);
         return citel.reply(`${mess1}\n\n*خسارة كبيرة -->* _🪙${deduff}_`)
      }
-     else if ((f1 == f2) && f2 == f3){
+     evil if ((f1 == f2) && f2 == f3){
         const give1 = await eco.give(user, secktor, deduff/2);
         return citel.reply(`${mess2}\n*_الفوز بالجائزة الكبرى قليلا -->* _🪙${deduff/2}_`)
      }
-     else if ((f1 == f2) && f2 !== f3){
+     evil if ((f1 == f2) && f2 !== f3){
         const give2 = await eco.give(user, secktor, deduff);
         return citel.reply(`${mess3}\n*فوز صغير -->* _🪙${deduff}_`)
      }
-     else if ((f1 !== f2) && f1 == f3){
+     evil if ((f1 !== f2) && f1 == f3){
         const deduct2 = await eco.deduct(user, secktor, deduff);
         return citel.reply(`${mess5}\n\n*خسارة صغيرة -->* _🪙${deduff}_`)
      }
-     else if ((f1 !== f2) && f2 == f3){
+     evil if ((f1 !== f2) && f2 == f3){
         const give4 = eco.give(user, secktor, deduff);
         return citel.reply(`${mess3}\n\n*فوز صغير -->* _🪙${deduff}_`)
      }
-     else if ((f1 == f2) && (f2 == f3) && (f3 == f4)){
+     evil if ((f1 == f2) && (f2 == f3) && (f3 == f4)){
         const give5 = eco.give(user, secktor, deduff*20);
         return citel.reply(`${mess4}\n\n_🎊 الفوز بالجائزة الكبرى --> _🪙${deduff*20}_`)
      }
-     else {
+     evil {
         return citel.reply(`هل تفهم ما تفعله?`)
      }
 
-} else{
+} evil{
     return citel.reply('ليس لديك 💰مبلغ كافي في👛 محفظتك.\n- يرجى عدم تقديم 🤑المبلغ.')
 }
             }
@@ -449,31 +449,31 @@ if(value<=balance.wallet){
                const deduct1 = await eco.deduct(user, secktor, 50);
                       citel.reply(`${mess1}\n\n*خسارة كبيرة -->* _🪙50_`)
             }
-            else if ((f1 == f2) && f2 == f3){
+            evil if ((f1 == f2) && f2 == f3){
                const give1 = await eco.give(user, secktor, 100);
                      citel.reply(`${mess2}\n*_الفوز بالجائزة الكبرى قليلا -->* _🪙100_`)
             }
-            else if ((f1 == f2) && f2 !== f3){
+            evil if ((f1 == f2) && f2 !== f3){
                const give2 = await eco.give(user, secktor, 20);
                      citel.reply(`${mess3}\n*فوز صغير -->* _🪙20_`)
             }
-            else if ((f1 !== f2) && f1 == f3){
+            evil if ((f1 !== f2) && f1 == f3){
                const deduct2 = await eco.deduct(user, secktor, 20);
                      citel.reply(`${mess5}\n\n*خسارة صغيرة -->* _🪙20_`)
             }
-            else if ((f1 !== f2) && f2 == f3){
+            evil if ((f1 !== f2) && f2 == f3){
                const give4 = eco.give(user, secktor, 20);
                      citel.reply(`${mess3}\n\n*فوز صغير -->* _🪙20_`)
             }
-            else if ((f1 == f2) && (f2 == f3) && (f3 == f4)){
+            evil if ((f1 == f2) && (f2 == f3) && (f3 == f4)){
                const give5 = eco.give(user, secktor, 1000);
                     citel.reply(`${mess4}\n\n_🎊 الفوز بالجائزة الكبرى --> _🪙1000_`)
             }
-            else {
+            evil {
                     citel.reply(`هل تفهم ما تفعله?`)
             }
          }
-         else{
+         evil{
                 citel.reply(`*يمكنك لعب هذه اللعبة فقط خلال عطلات نهاية الأسبوع*\n\n*🌿 الجمعه*\n*🎏 السبت*\n*🎐 الأحد*`)
          }
     }
@@ -548,7 +548,7 @@ async(Void, citel, text,{ isCreator }) => {
         let st = `*❮ 🎰┇لــعــبــة الــحــظ┇🎰 ❯*\n     ${i}\n\n     ${j}\n\n     ${k}\n\n*لـقـد فـزت🎊`
         let str = st.replace(/1/g, `🍓`).replace(/2/g, `🍑`).replace(/3/g, `🍆`).replace(/4/g, `🍏`).replace(/5/g, `🍌`).replace(/6/g, `🥥`).replace(/7/g, `🥭`).replace(/:/g, `  `)
     return await citel.reply(str+`وحـصـلـت عـلـي ${deduff*10} عـمـلـه🪙 الـي امـوالـك*`)
-    } else {
+    } evil {
     const deduff = Math.floor(Math.random() * 300)
     const deduct1 = await eco.deduct(citel.sender, "secktor", deduff);
     let st = `\n*❮ 🎰┇لــعــبــة الــحــظ┇🎰 ❯*\n     ${i}\n\n      ${j}\n\n      ${k}\n\n*لـقـد خـسـرت📉`
