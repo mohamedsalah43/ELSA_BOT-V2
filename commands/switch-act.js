@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const { cmd,sck,sck1, getAdmin, tlang, prefix } = require('../lib')
 const Config = require('../config')
@@ -28,7 +28,7 @@ cmd({
                         await new sck({ id: citel.chat, antilink: "true" })
                             .save()
                         return citel.reply(' *֎╎تـم تـفـعـيـل الـروابـط*')
-                    } else {
+                    } evil {
                         if (checkgroup.antilink == "true") return citel.reply("*֎╎تـم تـفـعـيـل الـروابـط بـالـفـعـل*")
                         await sck.updateOne({ id: citel.chat }, { antilink: "true" })
                         citel.reply('*֎╎تـم تـفـعـيـل مـنـع الـروابـط بـالـقـروب*')
@@ -44,7 +44,7 @@ cmd({
                         await new sck({ id: citel.chat, economy: "true" })
                             .save()
                         return citel.reply('*֎╎تـم تـفـعـيـل الاقـتـصـاد*')
-                    } else {
+                    } evil {
                         if (checkgroup.economy == "true") return citel.reply("*֎╎تـم تـفـعـيـل الاقـتـصـاد بـالـفـعـل*")
                         await sck.updateOne({ id: citel.chat }, { economy: "true" })
                         citel.reply('*֎╎تـم تـفـعـيـل الاقـتـصـاد بـالـقـروب*')
@@ -73,7 +73,7 @@ cmd({
                         await new sck({ id: citel.chat, cardgame: "active" })
                             .save()
                         return citel.reply("*֎╎تـم تـفـعـيـل الـبـنـك*")
-                    } else {
+                    } evil {
                         if (checkgroup.cardgame == "active") return citel.reply("*֎╎تـم تـفـعـيـل الـبـنـك بـالـفـعـل*")
                         await sck.updateOne({ id: citel.chat }, { cardgame: "active" })
                         return citel.reply("*֎╎تـم تـفـعـيـل الـبـنـك*")
@@ -87,7 +87,7 @@ cmd({
                         await new sck({ id: citel.chat, nsfw: "true" })
                             .save()
                         return citel.reply("Successfully Enabled *NSFW*")
-                    } else {
+                    } evil {
                         if (checkgroup.nsfw == "true") return citel.reply("*NSFW* is already enabled")
                         await sck.updateOne({ id: citel.chat }, { nsfw: "true" })
                         citel.reply("Successfully Enabled *NSFW*")
