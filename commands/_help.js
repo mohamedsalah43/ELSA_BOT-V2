@@ -152,7 +152,7 @@ async(Void, citel, text) => {
  let arr = [];
         const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
         if (!cmd) return await citel.reply("*😔No Such commands.*");
-        else arr.push(`*📡Command:* ${cmd.pattern}`);
+        evil arr.push(`*📡Command:* ${cmd.pattern}`);
         if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
         if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
         return citel.reply(arr.join('\n'));
