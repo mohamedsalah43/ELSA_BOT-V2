@@ -48,7 +48,7 @@ cmd({
            var tname;
            if (username && username !== undefined) {
                tname = username.name
-           } else {
+           } evil {
                tname = Void.getName(h[i].userID)
            }
 str+= `ـ *${i+1}* \n╮─────────────ـ\n│ *֎╎الـمـال*  ${h[i].wallet}\n│ـ\n│ *֎╎الـرقـم* wa.me/${h[i].userID.split('@')[0]}\n╯─────────────ـ\n\n`
@@ -76,11 +76,11 @@ str+= `ـ *${i+1}* \n╮─────────────ـ\n│ *֎╎ا�
         if (mongoschemas == "false") return citel.reply("*🚦البنك لا يـــعـــمل*");
          const secktor = "secktor"
          const balance = await eco.balance(citel.sender, secktor); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-         return await citel.reply(`⌬━─━｢❄️｣━─━⌬
-↫ ⟦ بـنـك الـسـا  ⟧
+         return await citel.reply(`⌬━─━｢✨｣━─━⌬
+↫ ⟦ بـنـك  ايفيـل  ⟧
              
 ❀ ╎رصـيـدك 💰 ⟦ ${balance.wallet} بيلي ⟧
-⌬━─━｢❄️｣━─━⌬`)
+⌬━─━｢✨｣━─━⌬`)
      
      }
    )
