@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const { dare, truth, kt, hal } = require('../lib/truth-dare.js')
  const axios = require('axios')
