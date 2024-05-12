@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const Config = require('../config')
 let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1, cmd, GIFBufferToVideoBuffer } = require("../lib");
