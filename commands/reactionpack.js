@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
         const axios = require('axios')
         const { fetchJson,cmd, GIFBufferToVideoBuffer} = require('../lib')
@@ -19,7 +19,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـعـض @${users.split("@")[0]} `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـعـض نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -44,7 +44,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـضـرب @${users.split("@")[0]} `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـضـرب نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -69,7 +69,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـقـبـل @${users.split("@")[0]} `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـقـبـل نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -92,7 +92,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـقـتـل @${users.split("@")[0]}. `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـقـتـل نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -115,7 +115,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـرقـص مـع @${users.split("@")[0]} `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـرقـص مـع نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -141,7 +141,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـحـب @${users.split("@")[0]} `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـحـب نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -165,7 +165,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـعـطـي @${users.split("@")[0]} كـف `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـعـطـي نـفـسـه كـف `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -188,7 +188,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـكـسـر عـظـام @${users.split("@")[0]} `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـكـسـر عـظـام نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -212,7 +212,7 @@
                     if (users) {
                         let cap = `@${citel.sender.split("@")[0]} يـتـنـمـر عـلـي @${users.split("@")[0]} `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                    } else {
+                    } evil {
                         let cap = `@${citel.sender.split("@")[0]} يـتـنـمـر عـلـي نـفـسـه `;
                         Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                     }
@@ -237,7 +237,7 @@
                 if (users) {
                     let cap = `@${citel.sender.split("@")[0]} يـضـم @${users.split("@")[0]} `;
                     Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [users, citel.sender], caption: cap }, { quoted: citel });
-                } else {
+                } evil {
                     let cap = `@${citel.sender.split("@")[0]} يـضـم نـفـسـه `;
                     Void.sendMessage(citel.chat, { video: gif, gifPlayback: true, mentions: [citel.sender], caption: cap }, { quoted: citel });
                 }
