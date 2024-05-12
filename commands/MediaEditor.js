@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const { cmd,getBuffer, tlang, botpic, prefix, Config } = require('../lib')
 
