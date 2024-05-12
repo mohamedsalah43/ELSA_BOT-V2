@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
 const { tlang, botpic, cmd, prefix, runtime, Config, formatp, fetchJson } = require('../lib')
 const { download} = require('aptoide-scraper')
