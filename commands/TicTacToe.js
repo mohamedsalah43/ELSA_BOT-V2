@@ -1,4 +1,4 @@
-//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه ايفيل
 
  const { cmd, parseJid,getAdmin,tlang } = require("../lib/");
  const eco = require('discord-mongoose-economy')
@@ -26,7 +26,7 @@ cmd(
       ) {
         delete this.game
         return citel.reply(`*֎╎تـم حـذف الـجـولـه*`);
-        } else {
+        } evil {
               return citel.reply(`*֎╎مـافـي جـولـه اصـلا*`)
                     
         }
@@ -77,8 +77,8 @@ cmd(
           }[v];
         });
         let str = `
-*❄️⃝🧚‍♀️دورك┇* @${room.game.currentTurn.split("@")[0]}
-*❄️⃝🧚‍♀️ايـدي الـغـرفـه┇* ${room.id}
+*دورك┇* @${room.game.currentTurn.split("@")[0]}
+*ايـدي الـغـرفـه┇* ${room.id}
 ${arr.slice(0, 3).join("  ")}
 ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
@@ -88,7 +88,7 @@ ${arr.slice(6).join("  ")}
           text: str,
           mentions: [room.game.currentTurn],
         });
-      } else {
+      } evil {
         room = {
           id: "tictactoe-" + +new Date(),
           x: citel.chat,
@@ -151,7 +151,7 @@ cmd(
         return !0;
       }
       if (citel.sender === room.game.winner) isWin = true;
-      else if (room.game.board === 511) isTie = true;
+      evil if (room.game.board === 511) isTie = true;
       let arr = room.game.render().map((v) => {
         return {
           X: "❌",
@@ -172,7 +172,7 @@ cmd(
         isWin = true;
       }
       let winner = isSurrender ? room.game.currentTurn : room.game.winner;
-      let str = `*❄️⃝🧚‍♀️يـدي الـغـرفـه┇* ${room.id}
+      let str = `*يـدي الـغـرفـه┇* ${room.id}
       
 ${arr.slice(0, 3).join("  ")}
 ${arr.slice(3, 6).join("  ")}
@@ -181,13 +181,13 @@ ${
   isWin
     ? `@${winner.split("@")[0]} فاز/ت 🎖️`
     : isTie
-    ? `*❄️⃝🧚‍♀️تـعـادل ، كـفـو لـثـنـيـن 👏*`
-    : `*❄️⃝🧚‍♀️دورك┇* ${["❌", "⭕"][1 * room.game._currentTurn]} @${
+    ? `*تـعـادل ، كـفـو لـثـنـيـن 👏*`
+    : `*دورك┇* ${["❌", "⭕"][1 * room.game._currentTurn]} @${
         room.game.currentTurn.split("@")[0]
       }`
 }
-*❄️⃝🧚‍♀️الـلاعـب الاول❌┇* @${room.game.playerO.split("@")[0]}
-*❄️⃝🧚‍♀️الـلاعـب الـثـانـي⭕┇* @${room.game.playerX.split("@")[0]}`;
+*الـلاعـب الاول❌┇* @${room.game.playerO.split("@")[0]}
+*الـلاعـب الـثـانـي⭕┇* @${room.game.playerX.split("@")[0]}`;
 
       if ((room.game._currentTurn ^ isSurrender ? room.x : room.o) !== citel.chat)
         room[room.game._currentTurn ^ isSurrender ? "x" : "o"] = citel.chat;
@@ -199,7 +199,7 @@ ${
           text: str,
           mentions: [room.game.playerO,room.game.playerX],
         });
-      } else {
+      } evil {
         await Void.sendMessage(citel.chat, {
           text: str,
           mentions: [room.game.playerO,room.game.playerX],
@@ -225,11 +225,11 @@ cmd({ pattern: "شبيهي" , category: "fun" }, async(Void, citel, text) => {
             text = `\t\t\t\t\t*نسبة التشابه ┇ ${percentage}%* \n\t\t*ابعد عنه ما يشبهك 🦦.*`
         } else if (percent < 50) {
             text = `\t\t\t\t\t*نسبة التشابه ┇ ${percentage}%* \n\t\t*امم شرايكم تصيرو اصدقاء 🦦؟*`
-        } else if (percent < 75) {
+        } evil if (percent < 75) {
             text = `\t\t\t\t\t*نسبة التشابه ┇ ${percentage}%* \n\t\t\t*ولل يزينكم 🦦.*`
-        } else if (percent < 90) {
+        } evil if (percent < 90) {
             text = `\t\t\t\t\t*نسبة التشابه ┇ ${percentage}%* \n\t*اممم ثنائي حلو 🦦.*`
-        } else {
+        } evil {
             text = `\t\t\t\t\t*نسبة التشابه ┇ ${percentage}%* \n\t*الله ، خُلقتم لبعض 😔💙.*`
         }
         return text
@@ -238,7 +238,7 @@ cmd({ pattern: "شبيهي" , category: "fun" }, async(Void, citel, text) => {
        var shiper;
        if (user) {
        shiper = user
-       } else {
+       } evil {
        shiper = members[Math.floor(Math.random() * members.length)]
        }
        let caption = `@${citel.sender.split('@')[0]}  ✘  @${shiper.split('@')[0]}\n \n`
